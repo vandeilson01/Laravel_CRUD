@@ -19,9 +19,4 @@ class TypeClient extends Model
         'type',
     ];
 
-
-    public function client()
-    {
-        return $this->hasMany(Client::class, 'id', 'client');
-    }
 }

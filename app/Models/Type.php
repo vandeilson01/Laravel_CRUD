@@ -19,9 +19,4 @@ class Type extends Model
     ];
 
 
-    public function scopePeoples($query, $type)
-    {
-        return $query->where('id', $type);
-    }
-
 }

@@ -16,11 +16,11 @@ class TypeSeeder extends Seeder
     {
         //
         Type::insert([
-            'type' => 'Pessoa Física',
+            'people' => 'Pessoa Física',
         ]);
 
         Type::insert([
-            'type' => 'Pessoa Jurifica',
+            'people' => 'Pessoa Jurifica',
         ]);
     }
 }

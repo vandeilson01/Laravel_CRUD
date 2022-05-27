@@ -14,5 +14,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
          \App\Models\User::factory(10)->create();
+
+         \App\Models\User::insert([
+            'name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'email_verified_at' => date('Y-m-d H:i:s'),
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+        ]);
     }
 }
